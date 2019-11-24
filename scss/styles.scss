@@ -1,9 +1,384 @@
+body {
+    color: #fff;
+    margin: 15px;
+}
+.ba-hero {
+    height: calc(100vh - 80px);
+    background: {
+        image: url(../img/hero.jpg);
+        position: center;
+        size: cover;
+        color: #000;
+    }
+    font-family: $josefin;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.625rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        margin: 0 0 15px;
+    }
+
+    &__text {
+        font-size: 1.375rem;
+        line-height: 1.625rem;
+        letter-spacing: 0.38rem;
+        text-transform: capitalize;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    &__form {
+        margin-top: 50px;
+    }
+
+    &__search {
+        display: inline-block;
+        width: 45.045%;
+        height: 60px;
+        color: #000;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            font-size: 0.875rem;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    }
+
+    &__btn {
+        width: 150px;
+        height: 62px;
+        border: 2px solid #fff;
+        margin-left: -5px;
+        background-color: #5474fd;
+        font-family: $aleo;
+        font-size: 0.875rem;
+        letter-spacing: 0.0875rem;
+        text-transform: uppercase;
+        padding: 0;
+        outline: none;
+
+        &:hover {
+            background-color: rgba($color: #5474fd, $alpha: .5);
+            color: red;
+            transition: .5s;
+        }
+
+        img {
+            vertical-align: middle;
+            margin-left: 13px;
+        }
+    }
+}
+
+.ba-header {
+    min-height: 80px;
+    background-color: #5474fd;
+    display: flex;
+    align-items: center;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .ba-logo {
+        font-family: $josefin;
+        font-size: 1.5rem;
+        letter-spacing: 0.15rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
 .ba-menu {
     display: flex;
     align-items: center;
     list-style: none;
-}
-.ba-menu__link {
+    margin: 0;
+    padding: 0;
+
+    &__item:nth-child(n+2) {
+        margin-left: 40px;
+    }
+
+    &__link {
+        font-family: $aleo;
     color: inherit;
     text-decoration: none;
+    text-transform: uppercase;
 }
+}
+.ba-choose {
+    min-height: 685px;
+    background: {
+        image: url(../img/choose.jpg);
+        size: cover;
+        color: #000;
+    }
+    padding-top: 120px;
+
+    &-info {
+        padding-top: 80px;
+
+        &__title {
+            font-family: $aleo;
+            font-size: 2.25rem;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin: 0 0 55px;
+        }
+
+        &__text {
+            font-family: $josefin;
+            font-size: 1rem;
+            line-height: 1.625rem;
+            letter-spacing: 0.02rem;
+            color: #cecdcd;
+
+            p:nth-child(n+2) {
+                margin: 30px 0 0;
+            }
+        }
+    }
+
+    &__pictures {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__picture:last-child {
+        margin-left: 159px;
+    }
+}
+.ba-section__button {
+    font-family: $aleo;
+    font-size: 1rem;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    width: 225px;
+    height: 60px;
+    border: none;
+    background: rgba(73,107,254,1);
+    background: -moz-linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 36%, rgba(84,116,253,1) 36%, rgba(84,116,253,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(73,107,254,1)), color-stop(36%, rgba(73,107,254,1)), color-stop(36%, rgba(84,116,253,1)), color-stop(100%, rgba(84,116,253,1)));
+    background: -webkit-linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 36%, rgba(84,116,253,1) 36%, rgba(84,116,253,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 36%, rgba(84,116,253,1) 36%, rgba(84,116,253,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 36%, rgba(84,116,253,1) 36%, rgba(84,116,253,1) 100%);
+    background: linear-gradient(45deg, rgba(73,107,254,1) 0%, rgba(73,107,254,1) 36%, rgba(84,116,253,1) 36%, rgba(84,116,253,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd', GradientType=1 );
+    margin-top: 45px;
+    outline: none;
+}
+.ba-instruction {
+    min-height: 337px;
+    background: {
+        image: url(../img/sec.png);
+        repeat: no-repeat;
+        position-y: 25%;
+        position-x: 49%;
+        color: #333333;
+    }
+    padding-top: 100px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &-block {
+        text-align: center;
+        background-color: #333333;
+
+
+        span {
+            display: block;
+            font-family: $aleo;
+            font-size: 2.25rem;
+            margin-top: 20px;
+        }
+    }
+}
+.ba-spain-first {
+    min-height: 700px;
+    background: {
+        image: url(../img/spain1.jpg);
+        size: cover;
+        color: #000;
+    }
+
+    &__wrapper {
+        padding-top: 230px;
+    }
+}
+.ba-spain-second {
+    min-height: 700px;
+    background: {
+        image: url(../img/spain2.jpg);
+        size: cover;
+        color: #000;
+    }
+}
+.ba-spain-info-block {
+    background-color: rgba($color: #393939, $alpha: 0.9);
+    padding: 50px 0px 50px 30px;
+
+    &__title {
+        font-family: $josefin;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+        letter-spacing: 0.09375rem;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-family: $josefin;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.625rem;
+        text-transform: uppercase;
+        margin: 25px 0 0 0;
+    }
+
+    &__text {
+        font-family: $josefin;
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+}
+.ba-row--reverse {
+    flex-direction: row-reverse;
+}
+.ba-reviews {
+    min-height: 730px;
+    background: {
+        image: url(../img/rev.jpg);
+        size: cover;
+        color: #000;
+    }
+
+    &__title {
+        font-family: $aleo;
+        font-size: 2.25rem;
+        font-weight: 400;
+        text-align: center;
+        margin: 0 0 95px;
+    }
+
+    &__wrapper {
+        padding-top: 115px;
+    }
+
+    &-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: $josefin;
+        background-color: #333333;
+
+        img {
+            object-fit: cover;
+        }
+
+        &__wrapper {
+            padding:  0 55px 0 55px;
+        }
+
+        &__title {
+            font-size: 1.25rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin: 0 0 45px;
+        }
+
+        &__text {
+            font-size: 1rem;
+            line-height: 1.625rem;
+
+
+            p {
+                margin: 0;
+            }
+
+            p::before {
+                content: '\f10d';
+                font-family: "FontAwesome";
+                font-size: 1rem;
+                font-style: normal;
+                color: #5474fd;
+                position: relative;
+                margin-right: .5em;
+                top: -.5em;
+            }
+        }
+    }
+}
+.ba-footer {
+    font-family: $josefin;
+    min-height: 267px;
+    background-color: #232323;
+    padding-top: 115px;
+
+    &__wrapper {
+        text-align: center;
+    }
+
+    &__logo {
+        display: inline-block;
+        font-size: 1.5rem;
+        letter-spacing: 0.21rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0 0 12px;
+    }
+
+    &__text {
+        p {
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+            line-height: 1.625rem;
+            margin: 0;
+        }
+    }
+
+    &__links {
+        margin-top: 25px;
+
+        a {
+            text-decoration: none;
+        }
+
+        a:nth-child(n+2) {
+            margin-left: 20px;
+        }
+
+        i:hover {
+            color: royalblue;
+        }
+    }
+}
+
+.fab, .fas {
+    font-family: "FontAwesome";
+    font-size: 1rem;
+    font-style: normal;
+    color: #fff;
+  }
+
+

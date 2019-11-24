@@ -2,7 +2,7 @@
   box-sizing: border-box; }
 
 .container {
-  max-width: 1170px;
+  max-width: 1110px;
   width: 100%;
   margin: 0 auto;
   padding: 0 15px; }
@@ -71,11 +71,281 @@
 .ba-text-justify {
   text-align: justify; }
 
+body {
+  color: #fff;
+  margin: 15px; }
+
+.ba-hero {
+  height: calc(100vh - 80px);
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: #000;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+  .ba-hero__title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    margin: 0 0 15px; }
+  .ba-hero__text {
+    font-size: 1.375rem;
+    line-height: 1.625rem;
+    letter-spacing: 0.38rem;
+    text-transform: capitalize; }
+    .ba-hero__text p {
+      margin: 0; }
+  .ba-hero__form {
+    margin-top: 50px; }
+  .ba-hero__search {
+    display: inline-block;
+    width: 45.045%;
+    height: 60px;
+    color: #000;
+    border: none;
+    outline: none; }
+    .ba-hero__search::placeholder {
+      font-size: 0.875rem;
+      text-align: center;
+      margin: 0 auto; }
+  .ba-hero__btn {
+    width: 150px;
+    height: 62px;
+    border: 2px solid #fff;
+    margin-left: -5px;
+    background-color: #5474fd;
+    font-family: "Aleo", serif;
+    font-size: 0.875rem;
+    letter-spacing: 0.0875rem;
+    text-transform: uppercase;
+    padding: 0;
+    outline: none; }
+    .ba-hero__btn:hover {
+      background-color: rgba(84, 116, 253, 0.5);
+      color: red;
+      transition: .5s; }
+    .ba-hero__btn img {
+      vertical-align: middle;
+      margin-left: 13px; }
+
+.ba-header {
+  min-height: 80px;
+  background-color: #5474fd;
+  display: flex;
+  align-items: center; }
+  .ba-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+  .ba-header .ba-logo {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff; }
+
 .ba-menu {
   display: flex;
   align-items: center;
-  list-style: none; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .ba-menu__item:nth-child(n+2) {
+    margin-left: 40px; }
+  .ba-menu__link {
+    font-family: "Aleo", serif;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase; }
 
-.ba-menu__link {
-  color: inherit;
-  text-decoration: none; }
+.ba-choose {
+  min-height: 685px;
+  background-image: url(../img/choose.jpg);
+  background-size: cover;
+  background-color: #000;
+  padding-top: 120px; }
+  .ba-choose-info {
+    padding-top: 80px; }
+    .ba-choose-info__title {
+      font-family: "Aleo", serif;
+      font-size: 2.25rem;
+      font-weight: 400;
+      text-transform: capitalize;
+      margin: 0 0 55px; }
+    .ba-choose-info__text {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1rem;
+      line-height: 1.625rem;
+      letter-spacing: 0.02rem;
+      color: #cecdcd; }
+      .ba-choose-info__text p:nth-child(n+2) {
+        margin: 30px 0 0; }
+  .ba-choose__pictures {
+    display: flex;
+    flex-direction: column; }
+  .ba-choose__picture:last-child {
+    margin-left: 159px; }
+
+.ba-section__button {
+  font-family: "Aleo", serif;
+  font-size: 1rem;
+  letter-spacing: 0.075rem;
+  text-transform: uppercase;
+  width: 225px;
+  height: 60px;
+  border: none;
+  background: #496bfe;
+  background: -moz-linear-gradient(45deg, #496bfe 0%, #496bfe 36%, #5474fd 36%, #5474fd 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, #496bfe), color-stop(36%, #496bfe), color-stop(36%, #5474fd), color-stop(100%, #5474fd));
+  background: -webkit-linear-gradient(45deg, #496bfe 0%, #496bfe 36%, #5474fd 36%, #5474fd 100%);
+  background: -o-linear-gradient(45deg, #496bfe 0%, #496bfe 36%, #5474fd 36%, #5474fd 100%);
+  background: -ms-linear-gradient(45deg, #496bfe 0%, #496bfe 36%, #5474fd 36%, #5474fd 100%);
+  background: linear-gradient(45deg, #496bfe 0%, #496bfe 36%, #5474fd 36%, #5474fd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#496bfe', endColorstr='#5474fd', GradientType=1 );
+  margin-top: 45px;
+  outline: none; }
+
+.ba-instruction {
+  min-height: 337px;
+  background-image: url(../img/sec.png);
+  background-repeat: no-repeat;
+  background-position-y: 25%;
+  background-position-x: 49%;
+  background-color: #333333;
+  padding-top: 100px; }
+  .ba-instruction__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+  .ba-instruction-block {
+    text-align: center;
+    background-color: #333333; }
+    .ba-instruction-block span {
+      display: block;
+      font-family: "Aleo", serif;
+      font-size: 2.25rem;
+      margin-top: 20px; }
+
+.ba-spain-first {
+  min-height: 700px;
+  background-image: url(../img/spain1.jpg);
+  background-size: cover;
+  background-color: #000; }
+  .ba-spain-first__wrapper {
+    padding-top: 230px; }
+
+.ba-spain-second {
+  min-height: 700px;
+  background-image: url(../img/spain2.jpg);
+  background-size: cover;
+  background-color: #000; }
+
+.ba-spain-info-block {
+  background-color: rgba(57, 57, 57, 0.9);
+  padding: 50px 0px 50px 30px; }
+  .ba-spain-info-block__title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    letter-spacing: 0.09375rem;
+    margin: 0; }
+  .ba-spain-info-block__subtitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.625rem;
+    text-transform: uppercase;
+    margin: 25px 0 0 0; }
+  .ba-spain-info-block__text {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem; }
+
+.ba-row--reverse {
+  flex-direction: row-reverse; }
+
+.ba-reviews {
+  min-height: 730px;
+  background-image: url(../img/rev.jpg);
+  background-size: cover;
+  background-color: #000; }
+  .ba-reviews__title {
+    font-family: "Aleo", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 0 95px; }
+  .ba-reviews__wrapper {
+    padding-top: 115px; }
+  .ba-reviews-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #333333; }
+    .ba-reviews-block img {
+      object-fit: cover; }
+    .ba-reviews-block__wrapper {
+      padding: 0 55px 0 55px; }
+    .ba-reviews-block__title {
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin: 0 0 45px; }
+    .ba-reviews-block__text {
+      font-size: 1rem;
+      line-height: 1.625rem; }
+      .ba-reviews-block__text p {
+        margin: 0; }
+      .ba-reviews-block__text p::before {
+        content: '\f10d';
+        font-family: "FontAwesome";
+        font-size: 1rem;
+        font-style: normal;
+        color: #5474fd;
+        position: relative;
+        margin-right: .5em;
+        top: -.5em; }
+
+.ba-footer {
+  font-family: "Josefin Sans", sans-serif;
+  min-height: 267px;
+  background-color: #232323;
+  padding-top: 115px; }
+  .ba-footer__wrapper {
+    text-align: center; }
+  .ba-footer__logo {
+    display: inline-block;
+    font-size: 1.5rem;
+    letter-spacing: 0.21rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 12px; }
+  .ba-footer__text p {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.625rem;
+    margin: 0; }
+  .ba-footer__links {
+    margin-top: 25px; }
+    .ba-footer__links a {
+      text-decoration: none; }
+    .ba-footer__links a:nth-child(n+2) {
+      margin-left: 20px; }
+    .ba-footer__links i:hover {
+      color: royalblue; }
+
+.fab, .fas {
+  font-family: "FontAwesome";
+  font-size: 1rem;
+  font-style: normal;
+  color: #fff; }
